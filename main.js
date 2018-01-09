@@ -1,5 +1,14 @@
-var numbers = [4, 9, 16, 25];
-roots = numbers.map(Math.sqrt);
-for (x in roots) {
-    console.log(roots[x]);
-}
+var original_key_value_array = [
+    {name: 'Charles Thompson', address: 'Accra'},
+    {name: 'Philisiah Mwaluma', address: 'Nairobi'},
+    {name: 'Sadiq Okocha', address: 'Chicago'}
+];
+
+var reformatted_key_value_array = original_key_value_array.map(function (object) {
+    internal_object = object.name + ' comes from ' + object.address;
+    return internal_object;
+});
+
+console.log(reformatted_key_value_array);
+
+console.log(original_key_value_array);
