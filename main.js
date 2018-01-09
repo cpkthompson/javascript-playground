@@ -10,6 +10,21 @@ var reformatted_key_value_array = original_key_value_array.map(function (object)
 });
 
 for (sentence in reformatted_key_value_array) {
-    console.log(reformatted_key_value_array[sentence])
+    // console.log(reformatted_key_value_array[sentence])
+
 }
 // console.log(original_key_value_array);
+
+
+numbers = [2, 4, 6, 8, 10];
+squared_numbers = numbers.map(function (number) {
+    return number * number;
+});
+
+
+console.log(squared_numbers);
+
+
+squared_numbers.forEach(function (number) {
+    console.log('Number: ' + number)
+});
